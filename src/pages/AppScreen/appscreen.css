@@ -1,0 +1,15 @@
+/* APP CSS */
+.app-container {
+  width: 800px;
+  height: 1100px;
+  background-color:#ff6666;
+   margin:20px auto; 
+  border-radius: 20px;
+  
+}
+.app-screen-container {
+  width: 700px;
+  height: 700px;
+  margin: 0 auto;
+}
+

@@ -1,0 +1,27 @@
+.btn-container {
+  width: 700px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 5px;
+}
+
+.app-btn {
+  padding: 18px 0px;
+  width: 450px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0.2s ease-in-out all;
+}
+.app-btn:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+  color: #ff6666;
+
+}

@@ -1,0 +1,169 @@
+
+/* note screen section */
+.note-container {
+  position: relative;
+}
+.note-single-container{
+  width: 700px;
+  height: 760px;
+  display: grid;
+  grid-template-columns: repeat(1,1fr 1fr 1fr);
+  gap: 10px;
+  overflow: auto;
+}
+.single-note-div {
+  position: relative;
+}
+.single-note {
+  width: 210px;
+  height: 220px;
+  background-color: transparent;
+  border: 1px solid white;
+  display: grid;
+  align-self: center;
+  margin: 10px auto;
+  padding-left: 5px;
+  overflow: auto;
+  color:#fff;
+  transition: 0.4s ease-in-out all;
+  text-transform:none;
+  cursor: pointer;
+}
+.single-note:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.single-note::-webkit-scrollbar , .note-single-container::-webkit-scrollbar {
+  display: none;
+}
+.delete-note-btn {
+  height: 30px;
+  width:100px;
+  border-color: transparent;
+  background-color:#37839e;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+  font-size: larger;
+}
+.delete-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+/* input section */
+.note-app-p {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  
+}
+ .form-container:hover {
+  .input-box {
+    height: 100px;
+  }
+} 
+.input-box {
+  width: 510px;
+  height: 60px;
+  border-color: transparent; 
+  transition: 0.3s ease-in-out all;
+  padding: 10px 15px;
+  font-size: larger;
+  font-weight:600;
+  text-align:start;
+}
+.name-input {
+  border-color: transparent;
+  margin-right: 5px;
+  text-align: center;
+  font-weight: 700
+}
+.submit-btn {
+  padding:20px 40px;
+  background-color:#37839e;
+  cursor: pointer;
+  color: #fff;
+  font-size: large;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: 5px;
+  border-color: transparent;
+}
+
+
+
+/* EDIT SIDEBAR SECTION */
+
+ .edit-bar {
+  position: absolute;
+  right: -300px;
+  bottom: 0;
+  width: 250px;
+  height: 900px;
+  background-color: #37839e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform:rotateY(-90deg);
+  transform-origin: left;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out all;
+  
+} 
+.show-edit-bar {
+  transform:rotateY(0deg);
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+.edit-button {
+  height: 30px;
+  width:100px;
+  border-color: transparent;
+  background-color:#ff6666;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+  font-size: larger;
+}
+.close-note-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size:xx-large;
+}
+
+.edit-form {
+  width: 70%;
+  height: 80%;
+  display: grid;
+  grid-template-rows: 50px 550px 15px;
+  gap: 10px;
+}
+.edit-note-btn {
+  position: absolute;
+  top:1.5rem;
+  left:12.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: larger;
+}
